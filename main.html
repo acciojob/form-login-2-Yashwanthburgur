@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    First Name: <input id="first-name" name="First Name"><br>
-    Last Name: <input id="last-name" name="Last Name"><br>
-    Phone Number: <input id="phone-number" name="Phone Number"><br>
-    Email ID: <input id="email-id" name="Email ID"><br>
-    <button id="submit">Submit</button>
+  <head>
+    <title>Form Login 2</title>
+  </head>
+  <body>
+    <form onsubmit="showData(event)">
+      <label>First Name</label>
+      <input type="text" name="First Name"><br><br>
 
-    <script src="./script.js"></script>
-</body>
+      <label>Last Name</label>
+      <input type="text" name="Last Name"><br><br>
+
+      <label>Phone Number</label>
+      <input type="text" name="Phone Number"><br><br>
+
+      <label>Email ID</label>
+      <input type="email" name="Email ID"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Link external JS file -->
+    <script src="script.js"></script>
+  </body>
 </html>

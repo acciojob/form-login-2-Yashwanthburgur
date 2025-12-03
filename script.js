@@ -1,10 +1,15 @@
-document.getElementById('submit').addEventListener('click', alerting);
+function showData(e) {
+  e.preventDefault();
 
-function alerting() {
-    const firstName = document.getElementById('first-name').value;
-    const lastName = document.getElementById('last-name').value;
-    const phoneNumber = document.getElementById('phone-number').value;
-    const emailId = document.getElementById('email-id').value;
+  const firstName = document.getElementsByName("First Name")[0].value;
+  const lastName = document.getElementsByName("Last Name")[0].value;
+  const phone = document.getElementsByName("Phone Number")[0].value;
+  const email = document.getElementsByName("Email ID")[0].value;
 
-    alert(`First Name: ${firstName} Last Name: ${lastName} Phone Number: ${phoneNumber} Email ID: ${emailId}`);
+  alert(
+    "First Name: " + firstName +
+    " Last Name: " + lastName +
+    " Phone Number: " + phone +
+    " Email ID: " + email
+  );
 }
